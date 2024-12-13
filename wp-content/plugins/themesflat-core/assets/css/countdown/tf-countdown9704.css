@@ -1,0 +1,72 @@
+.tf-countdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.tf-countdown .tf-countdown-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tf-countdown-item:not(:first-of-type) {
+    margin-left: 10px;
+}
+.tf-countdown-item:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.tf-countdown .tf-countdown-digits {
+    color: var(--theme-primary-color);
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+}
+ 
+.tf-countdown .tf-countdown-label {
+    display: block;
+    color: #081E2A;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-top: 7px;
+}
+
+.tf-countdown.position-align-left {
+    margin-left: unset;
+}
+.tf-countdown.position-align-right {
+    margin-right: unset;
+}
+
+
+
+@media (max-width: 767px) {
+
+}

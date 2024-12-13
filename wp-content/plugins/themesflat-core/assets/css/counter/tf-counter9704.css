@@ -1,0 +1,319 @@
+.tf-counter {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 14px 40px 0px #00000008;
+    border-radius: 23px;
+    padding: 33px 30px 53px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border: 1px dashed #d4d4d4;
+    top: 50%;
+    left: 50%;
+    border-radius: 23px;
+    transform: translate(-50%,-50%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter:hover::after {
+    border-color: var(--theme-primary-color);
+}
+
+.tf-counter .wrap-counter-inner {
+    position: relative;
+    z-index: 5;
+}
+
+.tf-counter .counter-number-wrapper {
+    color: var(--theme-primary-color);
+    display: inline-flex;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 29px;    
+    margin-bottom: 14px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter .counter-icon {
+    margin-bottom: 27px;
+    color: var(--theme-secondary-color);
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter .counter-icon i {
+    font-size: 85px;
+}
+
+.tf-counter .counter-icon svg {
+    width: 85px;
+}
+
+
+
+.tf-counter .counter-icon i,
+.tf-counter .counter-icon svg {
+    display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter:hover .counter-icon i,
+.tf-counter:hover .counter-icon svg {
+    transform: rotateY(360deg);
+}
+
+.tf-counter .line { 
+    line-height: 1;
+}
+
+.tf-counter .counter-line {
+    display: inline-block;
+    width: 49px;
+    height: 3px;
+    border: 1px dashed var(--theme-primary-color);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter .counter-title {
+    margin-top: 11px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #081E2A;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter .counter-icon .shape-icon {
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%,-50%);
+    color: var(--theme-primary-color);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter .counter-icon .shape-icon svg {
+    width: 143px;
+}
+
+.tf-counter.hover-eff .counter-number-wrapper {
+    margin-bottom: 19px;
+}
+
+.tf-counter.hover-eff:hover {
+    box-shadow: 0px 7px 36px 0px rgba(0, 0, 0, 0.06);
+}
+
+.tf-counter.flex-item .wrap-counter-inner {
+    display: flex;
+    align-items: center;
+}
+
+.tf-counter .caption {
+    color: rgba(208, 24, 24, 0.13);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 49px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -54%;
+    left: -19%;
+}
+/* Style 1 */
+
+.tf-counter.style1::after {
+    border-color: transparent;
+}
+
+.tf-counter.style1:hover {
+    background: var(--theme-primary-color);
+}
+
+.tf-counter.style1:hover::after {
+    border-color: #fff;
+}
+
+
+.tf-counter.style1 .counter-icon > svg,
+.tf-counter.style1 .counter-icon > svg path {
+    fill: var(--theme-primary-color);
+}
+
+.tf-counter.style1 .counter-icon {
+    color: var(--theme-primary-color);
+    margin-bottom: 60px;
+}
+
+.tf-counter.style1 .counter-title {
+    margin-top: 17px;
+}
+
+.tf-counter.style1:hover .counter-icon > svg,
+.tf-counter.style1:hover .counter-icon > svg path {
+    fill: #fff;
+}
+
+.tf-counter.style1:hover .counter-title,
+.tf-counter.style1:hover .shape-icon,
+.tf-counter.style1:hover .counter-number-wrapper,
+.tf-counter.style1:hover .counter-icon {
+    color: #fff;
+}
+
+/* style 2 */
+.tf-counter.style2 {
+    background: initial;
+    box-shadow: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.tf-counter.style2 .wrap-counter {
+    text-align: left;
+}
+
+.tf-counter.style3::after,
+.tf-counter.style2::after {
+    display: none;
+}
+
+.tf-counter.style2 .counter-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 49px;
+    color: #000;
+    margin-top: 0;
+}
+
+.tf-counter .counter-number-wrapper {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;    
+    color: var(--theme-primary-color);
+}
+
+.tf-counter.style2 {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter.style2::before {
+    content: '';
+    width: 55%;
+    height: 6px;
+    background: var(--theme-primary-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-counter.style2:hover::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0px;
+}
+
+
+/* style 3 */
+
+.tf-counter.style3 {
+    padding: 3px 26px;
+}
+
+.tf-counter.style3:hover {
+    background: var(--theme-primary-color);
+}
+
+.tf-counter.style3 .content {
+    display: flex;
+    align-items: center;
+}
+
+.tf-counter.style3 .counter-number-wrapper{
+    color: var(--theme-primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;  
+    margin: 0;  
+}
+
+.tf-counter.style3 .counter-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 46px;  
+    margin: 0;
+    margin-left: 13px;    
+}
+
+.tf-counter.style3:hover .counter-title,
+.tf-counter.style3:hover .counter-number-wrapper {
+    color: #fff;
+}
+
+
+@media (max-width: 991px) {
+
+}
+
+
+

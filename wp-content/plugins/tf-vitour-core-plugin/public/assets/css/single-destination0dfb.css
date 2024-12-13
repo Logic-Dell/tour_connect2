@@ -1,0 +1,90 @@
+.tax-ba_booking-locations .featured-image {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.booking-location-map .booking-address {
+    margin-bottom: 20px;
+    display: none;
+}
+
+.tax-ba_booking-locations .related-tour {
+    margin-top: 100px;
+}
+
+.tax-ba_booking-locations .image-gallery {
+    margin-bottom: 100px;
+}
+
+.tax-ba_booking-locations .mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+    display: none;
+}
+
+.tax-ba_booking-locations .owl-carousel .owl-nav {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    width: 100%;
+}
+
+.tax-ba_booking-locations .owl-carousel .owl-nav .owl-next,
+.tax-ba_booking-locations .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: var(--theme-primary-color);
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 4px 8px 0px #0000000F;
+}
+
+.tax-ba_booking-locations .owl-carousel .owl-nav .owl-next {
+    left: unset;
+    right: 0;
+}
+
+.tax-ba_booking-locations .owl-carousel .owl-nav .owl-prev:before,
+.tax-ba_booking-locations .owl-carousel .owl-nav .owl-next:before,
+.tax-ba_booking-locations .owl-carousel .owl-dots .owl-dot:before {
+    display: none;
+}
+
+.tax-ba_booking-locations .owl-carousel .owl-nav .owl-prev:hover,
+.tax-ba_booking-locations .owl-carousel .owl-nav .owl-next:hover {
+    color: #fff;
+    background: var(--theme-primary-color);
+}
+
+.tax-ba_booking-locations .owl-carousel .owl-item img {
+   width: auto;
+}
+
+.related-tour .tf-listing-wrap .owl-carousel .owl-item .item {
+    padding: 15px;
+}
+
+.related-tour .tf-listing-wrap {
+    padding: 0;
+}
+
+.related-tour .tf-listing-wrap .owl-carousel .owl-stage-outer {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .booking-location-content {
+        margin-top: 50px;
+    }
+}

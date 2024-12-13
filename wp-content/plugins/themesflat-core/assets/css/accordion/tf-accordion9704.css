@@ -1,0 +1,114 @@
+.tf-accordion .accordion-title.icon_after .accordion-icon {
+    float: right;
+}
+
+.tf-accordion .tf-accordion-item:last-of-type {
+	margin-bottom: 0 !important;
+}
+
+.tf-accordion .tf-accordion-item {
+    box-shadow: 0px 4px 21px 0px #00000014;
+    background: #fff;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.tf-accordion .tf-accordion-item::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 44px solid var(--theme-primary-color);
+    border-left: 46px solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.tf-accordion .tf-accordion-item.active::before {
+    display: block;
+}
+
+.tf-accordion .accordion-title {
+    cursor: pointer;
+    display: flex;
+      display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px 67px 25px 35px;
+}
+
+.tf-accordion .accordion-icon {
+    font-size: 13px;
+}
+
+.tf-accordion .tf-accordion-item.active .accordion-title {
+    padding: 25px 67px 0px 35px;
+}
+
+.accordion-icon-open,
+.tf-accordion-item.active .accordion-icon-close {
+	display: none;
+}
+
+.accordion-icon-close,
+.tf-accordion-item.active .accordion-icon-open {
+	display: block;
+}
+
+.tf-accordion .accordion-title > span.wrap-accordion-icon {
+    display: flex;
+      display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-title,
+.wrap-accordion-icon {
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  
+}
+.tf-accordion .tf-accordion-item { 
+    overflow: hidden;
+}
+.tf-accordion .tf-accordion-item .title-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #120E0E;
+    flex-grow: 1;
+}
+.tf-accordion .accordion-content,
+.tf-accordion .accordion-content p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    color: #4F545A;
+}
+
+.tf-accordion .accordion-content {
+    padding: 18px 95px 35px 35px;
+}
+
+.tf-accordion .wrap-accordion-icon {
+    font-size: 20px;
+    color: #120E0E;
+}
+
+@media (max-width: 767px) {
+    .tf-accordion .tf-accordion-item.active .accordion-title {
+        padding: 25px 35px 0px 35px;
+    }
+    .tf-accordion .accordion-content {
+        padding: 18px 35px 35px 35px;
+    }
+}

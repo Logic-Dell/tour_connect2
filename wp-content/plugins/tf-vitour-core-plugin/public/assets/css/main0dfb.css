@@ -1,0 +1,665 @@
+:root {
+	--theme-primary-color: #4da528;
+}
+
+/* tooltip */
+
+.hv-tool {
+	position: relative;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.hv-tool::before {
+	--translate-y: calc(-100% - var(--arrow-size));
+	content: attr(data-tooltip);
+	color: #fff;
+	text-transform: capitalize;
+	padding: 6px 11px;
+	background: #000;
+	box-shadow: 0px 4px 26px 0px rgba(66, 71, 76, 0.1215686275);
+	width: max-content;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.hv-tool::after {
+	--translate-y: calc(-1.4 * var(--arrow-size));
+	content: "";
+	border: 6px solid transparent;
+	border-top-color: #000;
+}
+
+.hv-tool::after,
+.hv-tool::before {
+	opacity: 0;
+	visibility: hidden;
+	--arrow-size: 6px;
+	position: absolute;
+	top: 0px;
+	left: 45%;
+	transform: translateX(-50%) translateY(var(--translate-y, 0));
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-ms-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.hv-tool:hover::before,
+.hv-tool:hover::after {
+	opacity: 1;
+	top: 0px;
+	visibility: visible;
+}
+
+.hv-tool:hover {
+	z-index: 2;
+}
+
+.fa-spinner:before {
+	font-family: "Font Awesome 5 Pro";
+	color: var(--theme-primary-color);
+}
+
+.mfp-arrow:after,
+.mfp-arrow .mfp-a {
+	font-family: "Font Awesome 5 Pro";
+}
+
+svg.icon-marker {
+	width: 12px;
+	visibility: visible;
+}
+
+svg.icon-date {
+	width: 18px;
+}
+
+svg.icon-person {
+	width: 21px;
+}
+
+#search_form_tabs {
+	display: none;
+}
+
+.add_ids_list {
+	background-color: #fff;
+	box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+	box-sizing: border-box;
+	margin: 4px 0 0 0;
+	border: 1px solid #e8e8e8;
+}
+
+.add_ids_list::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+	background-color: #f5f5f5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+.add_ids_list::-webkit-scrollbar-thumb {
+	background-color: #a7a7a7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+.add_ids_list::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+	background-color: #f5f5f5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+.add_ids_list .term_item {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.2;
+	list-style: none;
+	padding: 10px 0;
+	outline: none;
+	padding-left: 18px;
+	padding-right: 29px;
+	text-align: left;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	color: #000;
+	white-space: normal;
+	word-break: break-word;
+}
+
+.add_ids_title ul.add_ids_list li.term_item:hover,
+.add_ids_list .term_item:hover,
+.add_ids_list .term_item.active {
+	background-color: var(--theme-primary-color);
+	color: #fff;
+}
+
+.cmb2-wrap input[type="radio"] {
+	width: auto;
+}
+
+.ui-widget {
+	font-family: inherit;
+}
+
+/* Checkout */
+
+#checkout_form_block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#checkout_form_block > div h2 {
+	font-size: 22px;
+	margin: 0 0 40px;
+}
+
+#checkout_form_block .checkout-order {
+	padding-right: 30px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 60%;
+	flex: 0 0 60%;
+	max-width: 60%;
+}
+
+@media (max-width: 980px) {
+	#checkout_form_block .checkout-order {
+		max-width: 100%;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		padding-right: 0;
+	}
+}
+
+#checkout_form_block .checkout-order table.table_order_items_details {
+	border: none;
+}
+
+#checkout_form_block .checkout-order table.table_order_items_details tr {
+	border: none;
+}
+
+#checkout_form_block .checkout-order table.table_order_items_details tr td {
+	padding: 20px 0 5px;
+	vertical-align: top;
+	border: none;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_item_row_image {
+	width: 140px;
+	padding-right: 20px;
+	padding-top: 30px;
+}
+
+@media (max-width: 600px) {
+	#checkout_form_block
+		.checkout-order
+		table.table_order_items_details
+		tr
+		td.order_item_row_image {
+		width: 0;
+	}
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_item_row_details
+	table
+	tr {
+	border: none;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_item_row_details
+	table
+	tr
+	td {
+	padding: 0;
+	line-height: 26px;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_item_row_details
+	table
+	tr
+	td.order_item_info_title {
+	font-size: 19px;
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_item_row_details
+	table
+	tr
+	td
+	.order_item_td_label {
+	color: #1c231f;
+	font-weight: 500;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_item_row_price
+	.table_order_item_total_price
+	tr {
+	border: 0;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_item_row_price
+	.table_order_item_total_price
+	tr
+	td {
+	text-align: right;
+	padding: 0;
+	border: 0;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_items_row_total,
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_items_row_total_amount {
+	padding: 10px 0;
+	text-align: left;
+}
+
+#checkout_form_block
+	.checkout-order
+	table.table_order_items_details
+	tr
+	td.order_items_row_total_amount {
+	text-align: right;
+}
+
+#checkout_form_block .checkout-form-information {
+	padding-left: 30px;
+	max-width: 40%;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 40%;
+	flex: 0 0 40%;
+}
+
+@media (max-width: 980px) {
+	#checkout_form_block .checkout-form-information {
+		max-width: 100%;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		padding-left: 0;
+	}
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.input_group {
+	display: block;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.input_group
+	> div {
+	max-width: 100%;
+	margin-bottom: 55px;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.input_group
+	.checkout-form-block {
+	line-height: 24px;
+	min-width: 30px;
+}
+
+.checkout-form-block
+	.checkout_form_input_field_focus
+	.checkout_form_input_label,
+.checkout-form-block
+	.checkout_form_input_field_content
+	.checkout_form_input_label {
+	all: unset !important;
+	color: #000 !important;
+	font-weight: 700 !important;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.input_group
+	.checkout-form-block
+	.checkout_input_field {
+	padding: 15px;
+	margin: 0;
+	border-radius: 9px;
+	border: 1px solid #00000014;
+	line-height: 26px !important;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.input_group
+	.checkout-form-block
+	.checkout_form_input_underline {
+	display: none;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.input_group
+	.checkout-form-block
+	.error {
+	font-size: 13px;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.amount_group {
+	padding: 0;
+	padding: 10px;
+	border-radius: 8px;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.amount_group
+	label {
+	margin-bottom: 0;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.payment_group.tabs_group {
+	font-size: 16px;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.terms_group {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	form#checkout_form
+	.submit_group
+	button {
+	width: 100%;
+}
+
+#checkout_form_block .checkout-form-information .coupon-form-block {
+	padding: 20px;
+	text-align: left;
+	display: block;
+	text-align: center;
+	background: #f3f8f6;
+	border-radius: 8px;
+	margin-bottom: 25px;
+	border: none;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	.coupon-form-block
+	#coupon_input_field {
+	height: 45px;
+	padding: 0 10px;
+}
+
+#checkout_form_block
+	.checkout-form-information
+	.coupon-form-block
+	#coupon_form_submit {
+	margin: 15px 0 0;
+}
+
+
+#checkout_form .checkout_form_input_label {
+    position: static !important;
+    margin-bottom: 15px !important;
+    font-weight: 700;
+    display: block !important;
+}
+/* Confirm */
+
+.babe_message_order {
+	margin-bottom: 20px;
+}
+
+.table_order_items_details > tbody > tr > td {
+    border-bottom: none;
+}
+
+.table_order_items_details .order_item_row_image {
+    padding: 8px;
+    max-width: 200px;
+    width: 200px;
+    border: none;
+}
+
+.table_order_items_details, table.table_order_items_details {
+    border:1px solid #f5f5f5;
+    margin: 0;
+}
+
+.table_order_items_details ~ h4  {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.table_order_items_details
+	tr
+	td.order_item_row_details
+	table
+	tr
+	td {
+        font-size: 16px;
+        font-weight: 400;
+}
+
+.table_order_item_total_price .order_item_total_price {
+    text-align: center !important;
+}
+
+.table_order_items_details
+	tr
+	td.order_item_row_details
+	table
+	tr
+	td.order_item_info_title {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.table_order_items_details
+	tr
+	td.order_item_row_details
+	table
+	tr
+	td
+	.order_item_td_label {
+        font-size: 16px;
+        color: #081E2A;
+}
+
+.table_order_items_details
+	tr
+	td.order_item_row_price
+	.table_order_item_total_price
+	tr {
+	border: 0;
+}
+
+.table_order_items_details
+	tr
+	td.order_item_row_price
+	.table_order_item_total_price
+	tr
+	td {
+	text-align: right;
+	padding: 0;
+	border: 0;
+}
+
+.table_customer_details {
+    margin-top: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+    padding: 10px;
+	margin: -10px;
+}
+
+
+.term_item input[type="checkbox"] {
+	visibility: hidden;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	cursor: pointer;
+	top: 1px;
+    position: relative;
+}
+
+.term_item input[type='checkbox']:checked {
+    background: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+}
+
+
+.term_item input[type='checkbox']:checked:before {
+    display: block;
+}
+
+.term_item input[type="checkbox"]::before {
+    border-radius: 3px;
+    content: '';
+    width: 19px;
+    height: 19px;
+    border: 1px solid #E7EAF3;
+    background: #fff;
+    display: block;
+    opacity: 1;
+    z-index: 5;
+    visibility: visible;
+    transform: translate(0%, -50%) rotate(0deg);
+    -webkit-transform: translate(0%, -50%) rotate(0deg);
+    -ms-transform: translate(0%, -50%) rotate(0deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+  
+/*Checkmark of the fake checkbox*/
+.term_item input[type="checkbox"]::after {
+    height: 6px;
+    width: 11px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-55deg);
+    display: block;
+    opacity: 0;
+    z-index: 5;
+    visibility: hidden;
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 3px;
+}
+
+/*Hide the checkmark by default*/
+.term_item input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.term_item input[type="checkbox"]:checked::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.term_item input[type="checkbox"]:checked:before {
+    background: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.term_item input[type="checkbox"]:focus + label::before {
+    outline: none;
+}
+
+.btn-search-guests-change, .btn-search-guests-change:focus {
+ 	box-shadow: none;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+    box-shadow: none;
+}

@@ -1,0 +1,266 @@
+.tfvt-sidebar h2, .tfvt-sidebar .widget-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    border-left: 2px solid var(--theme-primary-color);
+}
+
+.widget-tf-booking-search-filter .widget-title {
+    position: relative;
+    cursor: pointer;
+}
+
+.widget-tf-booking-search-filter .widget-title::after  {
+    content: "\f077";
+    font-family: 'Font Awesome 5 Pro';
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    background: transparent !important;
+    color: #121212;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.widget-tf-booking-search-filter .widget-title.active::after  {
+    /* content: "\f078"; */
+    transform: rotate(180deg);
+}
+
+
+
+/* Custom checkbox */
+.tf-search-filter-terms input[type="checkbox"] {
+	visibility: hidden;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	cursor: pointer;
+	top: 1px;
+    position: relative;
+}
+
+.tf-search-filter-terms input[type='checkbox']:checked {
+    background: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+}
+
+
+.tf-search-filter-terms input[type='checkbox']:checked:before {
+    display: block;
+}
+
+.tf-search-filter-terms input[type="checkbox"]::before {
+    border-radius: 3px;
+    content: '';
+    width: 19px;
+    height: 19px;
+    border: 1px solid #E7EAF3;
+    background: #fff;
+    display: block;
+    opacity: 1;
+    z-index: 5;
+    visibility: visible;
+    transform: translate(0%, -50%) rotate(0deg);
+    -webkit-transform: translate(0%, -50%) rotate(0deg);
+    -ms-transform: translate(0%, -50%) rotate(0deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+  
+/*Checkmark of the fake checkbox*/
+.tf-search-filter-terms input[type="checkbox"]::after {
+    height: 6px;
+    width: 11px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-55deg);
+    display: block;
+    opacity: 0;
+    z-index: 5;
+    visibility: hidden;
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 5px;
+}
+
+/*Hide the checkmark by default*/
+.tf-search-filter-terms input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.tf-search-filter-terms .active-checkbox input[type="checkbox"]::after ,
+.tf-search-filter-terms input[type="checkbox"]:checked::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tf-search-filter-terms .active-checkbox input[type="checkbox"]:before,
+.tf-search-filter-terms input[type="checkbox"]:checked:before {
+    background: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.tf-search-filter-terms input[type="checkbox"]:focus + label::before {
+    outline: none;
+}
+
+.tf-search-filter-terms .term_item  {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #26232A;
+}
+
+.tf-search-filter-terms .term_item label {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #26232A;
+    cursor: pointer;
+}
+
+.tf-search-filter-terms #filter_ba_booking-locations .term_item.term_item_level_0 {
+    font-weight: 700;
+}
+
+
+/* price */
+
+.tf-booking-price-filter .text-price,
+.tf-booking-price-filter #babe_range_price {
+    padding: 0;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #303134;
+}
+
+.tf-booking-price-filter .babe_price_slider_label {
+    margin-top: 20px;
+}
+
+.tf-booking-price-filter .ui-slider-range {
+	height: 6px;
+}
+.tf-booking-price-filter .ui-slider-range,
+.tf-booking-price-filter .babe_price_slider .ui-slider-handle {
+	background: var(--theme-primary-color);
+}
+.tf-booking-price-filter .ui-slider-handle {
+	border-radius: 50%;
+    border-color: var(--theme-primary-color);
+}
+
+.tf-booking-price-filter .ui-widget-content {
+	border: none;
+}
+.tf-booking-price-filter .ui-widget.ui-widget-content {
+	border: none;
+	margin: 10px 7px 0;
+	background: #151313;
+	height: 6px;
+	border-radius: 10px;
+}
+
+.tf-booking-price-filter #babe_range_price:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.tf-booking-price-filter .ui-slider-horizontal .ui-slider-handle {
+	top: -7px;
+}
+
+.tour-listing-sidebar .tfvt-sidebar {
+    border: 1px solid #E7EBF3;
+    padding: 36px 42px;
+    margin-bottom: 40px;
+    border-radius: 11px;
+}
+
+.hide-form {
+    display: none;
+}
+
+/* search form */
+.widget-tf-booking-search-form .input-group > * {
+    width: 100%;
+}
+
+.widget-tf-booking-search-form .search-field-inner i {
+    display: none;
+}
+
+.widget-tf-booking-search-form #search_form .input-group>div.search-field-inner {
+    border: 1px solid #E7EAF3;
+    border-radius: 6px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 14px 20px;
+}
+
+.widget-tf-booking-search-form #search_form .input-group>div.search-field-inner:has(.search_advanced_field) {
+    border: none;
+    display: none;
+}
+
+.widget-tf-booking-search-form #search_form .title-field {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #4F545A;
+}
+
+.widget-tf-booking-search-form #search_form .title-field img {
+    margin-right: 10px;
+}
+
+.widget-tf-booking-search-form .search-field-inner i.fa-chevron-down,
+.widget-tf-booking-search-form .search-field-inner i.fa-chevron-up {
+    display: inline-block;
+}
+
+.widget-tf-booking-search-form #search_form input,
+.widget-tf-booking-search-form #search_form .input-group .search-date .search_date {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.widget-tf-booking-search-form #search_form .search_advanced_select_wrapper {
+    margin-top: 82px;
+    margin-left: 0;
+}
+
+.widget-tf-booking-search-form #search_form {
+    padding-bottom: 0;
+}
+
+.widget-tf-booking-search-form #search_form .search_guests_field,
+.widget-tf-booking-search-form #search_form input, 
+.widget-tf-booking-search-form #search_form .input-group .search-date .search_date,
+.widget-tf-booking-search-form #search_form .add_ids_title_value {
+    font-weight: 600;
+    color: #041C29;
+    font: 16px;
+}

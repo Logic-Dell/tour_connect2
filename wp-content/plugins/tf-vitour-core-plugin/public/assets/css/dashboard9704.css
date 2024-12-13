@@ -1,0 +1,820 @@
+.page-template-page-dashboard .container {
+    max-width: 1500px;
+}
+
+.my_account_nav_item_current {
+    background: transparent;
+}
+
+.my_account_nav_item_1 .my_account_nav_item_title,
+.my_account_nav_item_title {
+    padding: 0;
+}
+
+.my_account_nav_item.my_account_nav_item_with_menu > .my_account_nav_item_title {
+    font-size: 18px;
+}
+
+.my_account_nav_item_title {
+    font-weight: 500;
+}
+
+.my_account_nav_item_current a .my_account_nav_item_title,
+.my_account_nav_list li a:hover .my_account_nav_item_title {
+	color: var(--theme-primary-color);
+}
+
+.my_account_nav_item_title {
+   color: #081E2A;
+}
+
+.my_account_nav_item_icon {
+    margin-right: 5px;
+}
+
+.my_account_user_profile {
+    align-items: center;
+}
+
+.my_account_user_info_table {
+    margin: 0;
+}
+
+.my_account_all_posts_table td,
+.my_account_user_info_table td,
+.my_account_user_info_table tr {
+    text-align: left;
+}
+
+.my_account_user_avatar {
+    margin-right: 20px;
+}
+
+.my_account_inner_page_block > h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.my_account_inner_page_block  h3 {
+    font-size: 25px;
+}
+
+#my_account_page_wrapper,
+.my_account_page_nav_list,
+.my_account_page_content_wrapper {
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+.my_account_page_content_wrapper {
+    min-height: calc(100vh - 50px);
+}
+
+
+.my_account_page_nav_list {
+    background: #fff;
+}
+
+.my_account_page_nav_wrapper {
+    padding: 0px;
+    padding-right: 30px;
+}
+
+.cmb2-before-row-header {
+    background: #021B32;
+    margin: 15px 0;
+}
+
+.cmb2-wrap .cmb-row {
+    margin-bottom: 20px;
+}
+
+.my_account_page_content_wrapper .cmb-td input {
+    padding: 10px;
+}
+
+#change_user_password input,
+.my_account_page_content_wrapper .cmb-td input {
+    margin-bottom: 0;
+}
+
+#edit_user_profile .input_group > div input,
+#change_user_password input {
+    padding: 15px;
+    border: none;
+}
+
+#edit_user_profile .input_group > div input {
+    margin: 0;
+}
+
+.checkout_form_input_underline {
+    display: none;
+}
+
+.checkout_form_input_label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #081E2A;
+    top: 13px;
+    left: 15px !important;
+}
+
+#edit_user_profile .submit_group {
+    margin-top: 0;
+}
+
+.checkout_form_input_field_focus .checkout_form_input_label, 
+.checkout_form_input_field_content .checkout_form_input_label{
+    -webkit-transform: translateY(-1.28125em) scale(1) perspective(100px) translateZ(.001px);
+    transform: translateY(-1.28125em) scale(1) perspective(100px) translateZ(.001px);
+    -ms-transform: translateY(-1.28125em) scale(1);
+    top: 0px;
+}
+
+#checkout_form .input_group > div, #edit_user_profile .input_group > div {
+    margin-bottom: 2.5em;
+}
+
+#edit_user_profile .input_group .edit-profile-avatar {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+#edit_user_profile .input_group > div {
+    flex-basis: calc(100% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#edit_user_profile .input_group {
+    margin-left: -30px;
+}
+
+.my_account_page_content_wrapper .cmb2-wrap .cmb-row.cmb-repeat .cmb2-metabox-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my_account_page_content_wrapper .cmb-type-group .cmb-row, 
+.my_account_page_content_wrapper .cmb2-postbox .cmb-row {
+    margin: 0 0 15px;
+}
+
+.my_account_page_content_wrapper .cmb-type-group .cmb-field-list {
+    padding: 10px;
+}
+
+.address_block > div:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.my_account_page_content_wrapper .view-rate-details {
+    width: 100%;
+    align-items: center;
+}
+
+.view-rate-details-item > *:not(:last-child) {
+    padding-bottom: 8px;
+}
+
+#rate_new_open {
+    padding: 5px 10px;
+}
+
+#rate_new_open:hover {
+    padding: 5px 10px;
+    height: auto;
+}
+
+.swal2-popup {
+    width: 50em;
+}
+
+.edit-profile-form-block.edit-profile-avatar {
+    align-items: center;
+}
+
+.my_bookings_table_td_status .btn {
+    padding: 0;
+    background: transparent;
+}
+
+.my_bookings_table_td_status .btn:hover {
+    background: unset;
+    color: #081E2A;
+}
+
+
+.my_account_my_bookings_table thead {
+    background: #f4f4f4;
+}
+
+.my_account_my_bookings_table thead th,
+.my_account_my_bookings_table thead td ,
+.tfvt_posts_table thead td {
+    font-weight: 700;
+    color: #081E2A;
+}
+.tfvt_posts_table {
+    background: #fff;
+}
+
+.tfvt_posts_total {
+    font-size: 20px;
+    font-weight: 700;
+    color: #081E2A;
+}
+
+.tfvt_posts_table .td_title img {
+    width: 142px;
+    height: 111px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.tfvt_posts_table td {
+    text-align: left;
+    border: none;
+    padding: 10px;
+}
+
+.tfvt_posts_table .td_title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.tfvt_posts_table .td_title .image {
+    margin-right: 10px;
+}
+
+.tfvt_posts_table .td_title .image .title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #26232A;
+}
+
+.tfvt_posts_table .td_action a {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    border: 1px solid #E9E8E8;
+    color: var(--theme-primary-color);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tfvt_posts_table .td_action a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.tfvt_posts_table .td_action a:hover {
+    background: #E9E8E8;
+}
+
+/* user infor */
+.my_account_user_info .my_account_label {
+    font-weight: 600;
+}
+
+.edit-profile-avatar img,
+.my_account_user_avatar img {
+    border-radius: 50%;
+}
+
+/* booking */
+.my_account_my_bookings_table thead th {
+    font-size: 15px;
+}
+
+.my_account_my_bookings_table tbody td,
+.my_account_my_bookings_table tbody th {
+    font-size: 14px;
+}
+
+.my_account_my_bookings_table tbody td.my_bookings_table_td_date_from, 
+.my_account_my_bookings_table tbody td.my_bookings_table_td_date_to {
+    font-size: 13px;
+}
+
+.my_account_my_bookings_order_status {
+    font-size: 13px;
+    padding: 5px;
+    border: none;
+    color: #fff;
+    background: var(--theme-primary-color);
+    border-radius: 15.5px;
+}
+
+/* pagination */
+.my_account_my_bookings_inner {
+    padding: 0px;
+    overflow-x: auto;
+}
+
+.babe_pager {
+    text-align: center;
+}
+
+.babe_pager .page-numbers {
+    padding: 3px 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #00000026;
+    color: #0A1426;
+    min-width: 40px;
+    margin-right: 10px;
+}
+
+.babe_pager .page-numbers:last-child {
+    margin-right: 0;
+}
+
+.babe_pager .page-numbers:hover,
+.babe_pager .page-numbers.current {
+    color: #fff;
+    background: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+}
+
+/* add post */
+.cmb-td label {
+    font-weight: 400;
+}
+
+.my_account_page_content_wrapper .service_prices_block h4, #primary .page .entry-content .my_account_page_content_wrapper .service_prices_block h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service_prices_block .service_price_item {
+    margin-bottom: 10px;
+}
+
+#rate-price-conditional-generator > * {
+    margin: 5px 0;
+}
+
+.my_account_page_content_wrapper .age-prices td, 
+#primary .page .entry-content .my_account_page_content_wrapper table.age-prices td {
+    font-size: 14px;
+}
+
+.my_account_page_content_wrapper .select2-container--default .select2-selection--multiple {
+    padding: 10px 15px;
+}
+
+.my_account_page_content_wrapper .select2-container--default .select2-search--inline .select2-search__field {
+    font-size: 16px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+    color: #fff;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    color: #131111;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+    color: #fff;
+}
+
+.ui-datepicker td a:hover,
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border-color: var(--theme-primary-color);
+    background: var(--theme-primary-color) ;
+    color: #fff;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    text-align: center;
+}
+
+/* Wishlist */
+.my_account_page_content_wrapper .btn-wishlist-page {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    padding: 5px 20px;
+    border-radius: 4px;
+    color: #fff;
+    background: var(--theme-primary-color);
+}
+
+/* Order */
+
+.table_order_items_details td.order_items_row_total_amount,
+.table_order_items_details td.order_items_row_total  {
+    background: none;
+}
+
+table td.order_items_row_total_amount.order_items_row_due,
+.table_order_item_total_price td.order_item_total_price, table.table_order_item_total_price td.order_item_total_price {
+    color: #081E2A;
+}
+
+.table_customer_details .customer_field_label,
+.my_account_my_bookings_table .my_account_my_bookings_table_td .currency_amount,
+.my_account_my_bookings_table .my_bookings_table_a_expand {
+    font-weight: 700;
+    color: #081E2A;
+}
+
+.table_order_items_details .order_item_row_details,
+.table_customer_details td,
+.table_order_items_details td.order_items_row_total,
+.table_order_item_row_details td {
+    text-align: left;
+}
+
+.table_order_items_details td.order_items_row_total {
+    color: #081E2A;
+    padding-left: 10px;
+}
+
+.currency_amount,
+.table_order_items_details td.order_item_info_title {
+    font-weight: 700;
+    color: #081E2A;
+}
+
+.order_item_row_image img {
+    border-radius: 4px;
+}
+
+.table_customer_details .customer_field_content {
+    text-align: right;
+}
+
+
+.my_account_page_content_wrapper .cmb-th {
+    width: 25% !important;
+    float: left;
+    font-weight: 500;
+    color: var(--e-global-color-accent);
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 4px;
+    padding-right: 10px;
+}
+  
+.my_account_page_content_wrapper .cmb-th + .cmb-td, 
+.my_account_page_content_wrapper .cmb-type-group .cmb-th + .cmb-td, 
+.my_account_page_content_wrapper .cmb2-postbox .cmb-th + .cmb-td {
+    width: 75%;
+    float: right;
+}
+  
+.my_account_page_content_wrapper .cmb-group-description > .cmb-th {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px !important;
+}
+
+.my_account_page_content_wrapper .my_account_edit_post .cmb-type-group .cmb-field-list {
+    padding: 0px;
+}
+
+.my_account_page_content_wrapper .cmb-type-row-header {
+    margin: 20px 0 10px !important;
+}
+  
+.my_account_page_content_wrapper .cmb-row {
+    padding-bottom: 10px;
+}
+  
+.my_account_page_content_wrapper .cmb-row .cmb-remove-field-row {
+    margin: 0;
+    padding: 10px;
+}
+
+.my_account_page_content_wrapper .cmb-type-discount .cmb-td .discount-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.my_account_page_content_wrapper .cmb-group-description .cmb-th {
+    width: 100% !important;
+}
+
+.my_account_page_content_wrapper span.button-secondary {
+    color: #fff;
+    border: none;
+    background: var(--theme-primary-color);
+    box-shadow: none;
+    padding: 10px 20px !important;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.my_account_page_content_wrapper span.button-secondary:hover {
+    background: #021B32;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 15px;
+    height: auto;
+    line-height: 1;
+}
+
+.cmb2-wrap input[type=radio] {
+    padding: 10px !important;
+}
+
+input[type="submit"].button-primary:hover {
+    background: #021B32;
+}
+
+.page-template-page-dashboard.page-title {
+    display: none;
+}
+
+.my_account_my_bookings_table {
+    margin-top: 0;
+}
+
+.babe_pager {
+    margin-bottom: 15px;
+}
+
+.page-template-page-dashboard #themesflat-content {
+    padding-top: 0;
+}
+
+.page-template-page-dashboard .themesflat-top,
+.page-template-page-dashboard footer {
+    display: none;
+}
+
+.need-login {
+    color: #fff;
+    background-color: var(--theme-primary-color);
+    padding: 10px 20px !important;
+    border-radius: 4px;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.page-template-page-dashboard #header {
+    position: fixed;
+    top: 0;
+}
+.my_account_page_nav_wrapper {
+    position: fixed;
+    top: 95px;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+    -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #E2DFEB;
+    padding: 0;
+    width: 300px;
+    overflow-y: scroll;
+    border-radius: 0;
+}
+
+.my_account_page_nav_wrapper .my_account_page_nav_list {
+    padding-top: 50px;
+}
+.my_account_page_nav_wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.my_account_page_nav_wrapper::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+  
+.my_account_page_nav_wrapper::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 6px;
+}
+  
+.my_account_page_nav_wrapper::-webkit-scrollbar-thumb:hover {
+    background: #00000050;
+}
+
+.my_account_page_content_wrapper {
+    padding-left: 330px;
+    padding-top: 120px;
+    padding-right: 15px;
+}
+
+.my_account-content-inner {
+    position: relative;
+}
+
+
+.my_account_page_nav_wrapper .my_account_page_nav_list ul.my_account_nav_list_0 > li > .my_account_nav_item_title {
+    padding: 5px 20px;
+}
+
+.my_account_page_nav_wrapper .my_account_page_nav_list ul.my_account_nav_list_1 li > a .my_account_nav_item_title, 
+.my_account_page_nav_wrapper .my_account_page_nav_list ul.my_account_nav_list_0 li > a .my_account_nav_item_title {
+    padding: 8px 20px;
+}
+
+.my_account_page_nav_wrapper .my_account_page_nav_list ul.my_account_nav_list_0 li > a:hover,
+.my_account_page_nav_wrapper .my_account_page_nav_list ul.my_account_nav_list_1 li > a:hover,
+.my_account_page_nav_wrapper .my_account_page_nav_list ul.my_account_nav_list_1 li.my_account_nav_item_current > a, 
+.my_account_page_nav_wrapper .my_account_page_nav_list ul.my_account_nav_list_0 li.my_account_nav_item_current > a {
+    background: #f4f4f4;
+}
+
+.my_account_nav_item_logout {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.my_account_user_info_table td,
+.my_account_user_info_table tr {
+    border: none;
+}
+
+#checkout_form  .checkout_form_input_label {
+    position: static !important;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#checkout_form_block .checkout-form-information form#checkout_form .input_group .checkout-form-block {
+    margin-bottom: 30px !important;
+}
+
+.cmb-td .term_item input[type="checkbox"]::after {
+    top: 5px;
+}
+
+.cmb-td .term_item label {
+    margin-bottom: 0;
+}
+
+.cmb-td .term_item {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+#my_account_page_wrapper {
+    overflow: hidden;
+}
+
+
+.edit-profile-form-block .checkout_form_input_field.checkout_form_input_field_content label ,
+.edit-profile-form-block .checkout_form_input_field.checkout_form_input_field_focus label {
+    display: none;
+}
+
+#edit_user_profile .checkout_form_input_label {
+    color: #4F545A;
+}
+
+#swal_new_rate_fields input {
+    max-width: 140px;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 0;
+}
+
+#swal_new_rate_fields .rate_min_max ,
+#swal_new_rate_fields .rate_dates {
+    margin: 15px 0;
+    gap: 15px;
+}
+
+#rate-price-conditional-generator select {
+    padding: 5px 20px;
+}
+
+#swal_new_rate_fields h4 {
+    font-size: 18px;;
+}
+
+#rate-price-conditional-generator > * {
+    font-size: 14px;
+}
+/* Responsive */
+
+
+@media only screen and (max-width:991px) {
+    .my_account_page_nav_wrapper .my_account_page_nav_list {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        z-index: 100;
+        border: 1px solid #aaa;
+        width: 100%;
+        padding: 1rem;
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .my_account_page_nav_wrapper {
+        all: unset;
+        z-index: 10;
+        width: 100%;
+        position: relative;
+    }
+
+    #my_account_page_wrapper {
+        flex-direction: column;
+    }
+
+    #my_account_page_wrapper .my_account_page_wrapper,
+    #my_account_page_wrapper .my_account_content_page_wrapper {
+        width: 100%;
+    }
+
+
+    .my_account_page_nav_wrapper .my_account_page_nav_selector {
+        border: 1px solid #f4f4f4;
+        margin-bottom: 0;
+    }
+
+    .my_account_page_nav_selector, 
+    .my_account_page_nav_wrapper .my_account_page_nav_selector_i,
+    .my_account_page_nav_list.my_account_page_nav_list_active {
+        display: block;
+        border: none;
+    }
+
+    body.logged-in.admin-bar  #my_account_page_wrapper {
+        margin-top: 100px;
+    }
+
+    .my_account_page_content_wrapper {
+       padding: 30px 5px;
+    }
+
+    .my_account_page_nav_wrapper .my_account_page_nav_selector_i {
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .tfvt_posts_inner,
+    .my_account_my_bookings_inner {
+        overflow-x: scroll;
+    }
+
+    .tfvt_posts_inner .tfvt_posts_table,
+    .my_account_my_bookings_inner .my_account_my_bookings_table {
+        width: 800px;
+    }
+
+    .my_account_inner_page_block > h2 {
+        font-size: 20px;
+        margin-bottom: 40px;
+        padding-right: 120px;
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+    .my_account_page_content_wrapper .cmb-th + .cmb-td, 
+    .my_account_page_content_wrapper .cmb-type-group .cmb-th + .cmb-td, 
+    .my_account_page_content_wrapper .cmb2-postbox .cmb-th + .cmb-td,
+    .my_account_page_content_wrapper .cmb-th {
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (max-width:800px) {
+    
+}
+

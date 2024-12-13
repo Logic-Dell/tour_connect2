@@ -1,0 +1,128 @@
+/* Default  */
+.tf-team .image-team {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.tf-team .image-team::before  {
+  content: '';
+  width: calc(100% - 20px);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: -15px;
+  border: 1px dashed var(--theme-primary-color);
+  border-radius: 13px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tf-team:hover .image-team::before {
+  rotate: -3deg;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tf-team .image-team .inner-image {
+  border-radius: 13px;
+  overflow: hidden;
+  z-index: 5;
+  position: relative;
+}
+
+.tf-team .image-team img {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tf-team:hover .image-team img {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.tf-team .social {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translate(0%,-50%);
+  padding: 12px 17px;
+  background: var(--theme-primary-color);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tf-team:hover .social {
+  left: -14px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tf-team .social::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 14px solid var(--theme-primary-color);
+  border-left: 17px solid transparent;
+  position: absolute;
+  left: -1px;
+  top: -12px;
+}
+
+.tf-team .social::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 18px solid var(--theme-primary-color);
+  border-right: 15px solid transparent;
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.tf-team .social li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.tf-team .social a {
+  color: #fff;
+  font-size: 15px;
+}
+
+.tf-team .social a:hover {
+  color: var(--theme-secondary-color);
+}
+
+
+.tf-team .position {
+  font-family: 'DM Sans';
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--theme-primary-color);
+  margin-bottom: 6px;
+}
+
+.tf-team .name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #081E2A;
+}

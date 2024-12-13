@@ -1,0 +1,357 @@
+.tf-tabs ul {
+    list-style: none;
+}
+
+.tf-tabs .tf-tabnav ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.tf-tabs.horizontal .tf-tabnav ul > li {
+    position: relative;
+    padding: 30px 25px;
+    flex: 1 1 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.tf-tabs.horizontal .tf-tabnav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.tf-tabs .tf-tabnav ul > li svg path,
+.tf-tabs .tf-tabnav ul > li,
+.tf-tabs .tf-tabnav ul > li span,
+.tf-tabs .tf-tabnav ul > li i,
+.tf-tabs .tf-tabnav ul > li svg,
+.tf-tabs .tf-tabnav > ul > li.active:after,
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner,
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner.active,
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner.inactive {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.tf-tabs.vertical {
+    display: flex;
+}
+
+.tf-tabs.vertical .tf-tabnav ul > li {
+    width: 100%;
+    justify-content: center;
+}
+
+.tf-tabs.vertical .tf-tabnav {
+    flex: 0 0 auto;
+}
+
+.tf-tabs.vertical .tf-tabnav ul {
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+.tf-tabs .tf-tabcontent {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.tf-tabs .tf-tabcontent {
+    padding-top: 42px;
+}
+
+.tf-tabs.vertical .tf-tabcontent {
+    padding: 0 0 0 56px;
+}
+
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner {
+    display: none;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #4F545A;
+
+}
+
+.tf-tabcontent:before,
+.tf-tabcontent:after {
+    display: table;
+    content: "";
+}
+
+.tf-tabcontent:after {
+    clear: both;
+}
+
+.tf-tabs.vertical .tf-tabnav ul > li {
+    border-left: 4px solid transparent;
+    padding: 20px 31px;
+    cursor: pointer;
+    color: #696A6E;
+}
+
+
+.tf-tabs.vertical .tf-tabnav ul > li:hover,
+.tf-tabs.vertical .tf-tabnav ul > li.active,
+.tf-tabs.vertical .tf-tabnav ul > li.set-active-tab {
+    color: #0C0C11;
+    font-weight: 500;
+    background: #fff;
+    box-shadow: 0px 1px 7px 0px #00000008;
+    border-left: 4px solid var(--theme-primary-color);
+}
+
+.tf-tabs.vertical .tf-tabnav ul > li:hover .tab-title-text,
+.tf-tabs.vertical .tf-tabnav ul > li.active .tab-title-text,
+.tf-tabs.vertical .tf-tabnav ul > li.set-active-tab .tab-title-text {
+    color: #0C0C11;
+    font-weight: 500;
+}
+
+
+
+.tf-tabs.vertical .tf-tabnav ul {
+    width: 429px;
+}
+
+
+.tf-tabs .tf-tabnav ul > li {
+    position: relative;
+}
+
+
+.tf-tabs .tf-tabnav ul > li:hover {
+    z-index: 1;
+}
+
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner.active,
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner.set-active-tab {
+    display: block;
+}
+
+.tf-tabs.icon-position-top .tf-tabnav ul > li .tab-title-text,
+.tf-tabs.icon-position-top .tf-tabnav ul > li .wrap-icon {
+    flex: 1 1 100%;
+}
+
+/* .tf-tabs.icon-position-top .tf-tabnav ul > li .wrap-icon {
+    margin-bottom: 24px;
+} */
+
+.tf-tabs.icon-position-top .tf-tabnav ul > li .wrap-icon svg {
+    width: 64px;
+}
+
+.tf-tabs.icon-position-top .tf-tabnav ul > li .wrap-icon i {
+    font-size: 64px;
+}
+
+.tf-tabs.icon-position-top .tf-tabnav ul > li {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 24px;
+}
+
+.tf-tabs.icon-position-right .tf-tabnav ul > li,
+.tf-tabs.icon-position-right .tf-tabnav ul > li img,
+.tf-tabs.icon-position-right .tf-tabnav ul > li svg,
+.tf-tabs.icon-position-right .tf-tabnav ul > li i,
+.tf-tabs.icon-position-right .tf-tabnav ul > li .tab-title-text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.tf-tabs.horizontal .tf-tabnav > ul > li {
+    position: relative;
+    border-radius: 8px;
+    margin-right: 18px;
+    border: 1px solid #EDEEEE
+}
+
+.tf-tabs.horizontal .tf-tabnav ul > li:hover,
+.tf-tabs.horizontal .tf-tabnav ul > li.active,
+.tf-tabs.horizontal .tf-tabnav ul > li.set-active-tab {
+    color: #fff;
+    background: var(--theme-primary-color);
+}
+
+.tf-tabs.horizontal .tf-tabnav ul > li:hover .tab-title-text,
+.tf-tabs.horizontal .tf-tabnav ul > li.active .tab-title-text,
+.tf-tabs.horizontal .tf-tabnav ul > li.set-active-tab .tab-title-text {
+    color: #fff;
+}
+
+.tf-tabs.horizontal .tf-tabnav ul > li:hover .wrap-icon svg path,
+.tf-tabs.horizontal .tf-tabnav ul > li.active .wrap-icon svg path,
+.tf-tabs.horizontal .tf-tabnav ul > li.set-active-tab .wrap-icon svg path,
+.tf-tabs.horizontal .tf-tabnav ul > li:hover .wrap-icon i,
+.tf-tabs.horizontal .tf-tabnav ul > li.active .wrap-icon i,
+.tf-tabs.horizontal .tf-tabnav ul > li.set-active-tab .wrap-icon i,
+.tf-tabs.horizontal .tf-tabnav ul > li:hover .wrap-icon svg,
+.tf-tabs.horizontal .tf-tabnav ul > li.active .wrap-icon svg,
+.tf-tabs.horizontal .tf-tabnav ul > li.set-active-tab .wrap-icon svg {
+    color: #fff;
+    fill: #fff;
+}
+
+
+.tf-tabs.vertical .tf-tabnav > ul > li {
+    margin-right: 0;
+    border-radius: 8px;
+}
+
+.tf-tabs .tf-tabnav > ul > li:last-child {
+    margin-right: 0;
+}
+
+.tf-tabs .tf-tabnav > ul > li.active:after,
+.tf-tabs .tf-tabnav > ul > li.set-active-tab:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.tf-tabs.show-triger-yes .tf-tabnav > ul > li.active:after,
+.tf-tabs.show-triger-yes .tf-tabnav > ul > li.set-active-tab:after {
+    display: block;
+}
+
+.tf-tabs.horizontal .tf-tabnav > ul > li.active:after,
+.tf-tabs.horizontal .tf-tabnav > ul > li.set-active-tab:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--theme-primary-color);
+    border-bottom: 0;
+}
+
+.tf-tabs.vertical .tf-tabnav > ul > li.active:after,
+.tf-tabs.vertical .tf-tabnav > ul > li.set-active-tab:after {
+    right: -10px;
+    top: calc(50% - 10px);
+    border-left: 10px solid #000000;
+    border-right: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.tf-tabs.horizontal.nav-left .tf-tabnav > ul,
+.tf-tabs.horizontal.nav-center .tf-tabnav > ul,
+.tf-tabs.horizontal.nav-right .tf-tabnav > ul {
+    display: inline-flex;
+}
+
+.tf-tabs.horizontal.nav-left .tf-tabnav {
+    text-align: left;
+}
+
+.tf-tabs.horizontal.nav-center .tf-tabnav {
+    text-align: center;
+}
+
+.tf-tabs.horizontal.nav-right .tf-tabnav {
+    text-align: right;
+}
+
+.tf-tabs .tf-tabnav ul > li .tab-title-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #081E2A;
+}
+
+.tf-tabs.vertical .tf-tabnav ul > li .tab-title-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #696A6E;
+}
+
+
+.tf-tabs.vertical .tf-tabnav ul {
+    background: #F4F6F8;
+    padding: 50px 22px 69px 32px ;
+}
+
+
+@media (max-width: 991px)  {
+    .elementor-section .elementor-container {
+        padding: 0 !important;
+    }
+    .tf-tabs.vertical .tf-tabnav ul {
+        padding: 50px 20px;
+    }
+    .tf-tabs.vertical .tf-tabcontent {
+        padding: 0 0 0 30px;
+    }
+    .tf-tabs.vertical .tf-tabnav ul {
+        width: 360px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tf-tabs.vertical .tf-tabnav ul {
+        width: 100%;
+    } 
+
+    .tf-tabs.vertical .tf-tabcontent {
+        padding: 0 15px;
+    }
+    .tf-tabs.vertical {
+        display: block;
+    }
+
+    .tf-tabs .tf-tabnav ul {
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+    }
+
+    .tf-tabs .tf-tabnav ul > li {
+        flex: 1 1 auto;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .tf-tabs.vertical.show-triger-yes .tf-tabnav > ul > li.active:after,
+    .tf-tabs.vertical.show-triger-yes
+        .tf-tabnav
+        > ul
+        > li.set-active-tab:after {
+        right: unset !important;
+        top: 100% !important;
+        transform: rotate(90deg) translateX(-50%);
+    }
+
+    .elementor-section .elementor-container {
+        padding: 0 !important;
+    }
+}
+
+
